@@ -91,7 +91,7 @@ if __name__ == "__main__":
         split=args.split,
         sensortype=args.sensortype,
         extended_range=extended_range,
-        val_data_path=args.val_data_path
+        # val_data_path=args.val_data_path
     )
 
     logger.info("loading evaluator")

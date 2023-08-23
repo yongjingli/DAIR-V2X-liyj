@@ -1,5 +1,5 @@
 dataset_type = "KittiDataset"
-data_root = "/home/dell/liyongjing/programs/SurroundOcc-liyj/mmdetection3d/data/DAIR-V2X/single-infrastructure-side"
+data_root = "xxx/mmdetection3d/data/DAIR-V2X/single-infrastructure-side"
 # data_root = "../../../data/DAIR-V2X/single-infrastructure-side/"
 class_names = ["Pedestrian", "Cyclist", "Car"]
 voxel_size = [0.05, 0.05, 0.1]
