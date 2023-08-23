@@ -18,6 +18,21 @@ mmdet3d_root="自己本地路径/mmdetection3d"
 #        └───── calib
 
 data_root="自己本地路径/DAIR-V3X-I/single-infrastructure-side"
+
+# 进行info生成的时候，可能会遇到img_path找不到的情况
+# 需要修改mmdetection3d/tools/data_converter/kitti_data_utils.py，修改下img名称的后缀
+#def get_image_path(idx,
+#                   prefix,
+#                   training=True,
+#                   relative_path=True,
+#                   exist_check=True,
+#                   info_type='image_2',
+#                   use_prefix_id=False):
+#    # return get_kitti_info_path(idx, prefix, info_type, '.png', training,
+#    #                            relative_path, exist_check, use_prefix_id)
+#    return get_kitti_info_path(idx, prefix, info_type, '.jpg', training,
+#                               relative_path, exist_check, use_prefix_id)
+
 python $mmdet3d_root/tools/create_data.py kitti \
 --root-path $data_root \
 --out-dir $data_root --extra-tag kitti
